@@ -1010,9 +1010,9 @@ CamTab:AddSlider('cam_smokereduce', {Text = 'Value', Default = 100, Min = 1, Max
 CamTab:AddLabel('Aura Color'):AddColorPicker('cam_smokeauracolor', {Default = C3(255, 0, 0), Title = 'Smoke Aura Color'})
 -- // Viewmodel Tab
 VWTab:AddToggle('vw_enabled', {Text = 'Enabled', Default = false}):OnChanged(function() end)
-local vmx = VWTab:AddSlider('vw_x', {Text = 'X', Default = 0, Min = -180, Max = 180, Rounding = 0, Compact = false}):OnChanged(function() end)
-local vmy = VWTab:AddSlider('vw_y', {Text = 'Y', Default = 0, Min = -180, Max = 180, Rounding = 0, Compact = false}):OnChanged(function() end)
-local vmz = VWTab:AddSlider('vw_z', {Text = 'Z', Default = 0, Min = -180, Max = 180, Rounding = 0, Compact = false}):OnChanged(function() end)
+local vmx = VWTab:AddSlider('vw_x', {Text = 'X', Default = 0, Min = -240, Max = 240, Rounding = 0, Compact = false}):OnChanged(function() end)
+local vmy = VWTab:AddSlider('vw_y', {Text = 'Y', Default = 0, Min = -240, Max = 240, Rounding = 0, Compact = false}):OnChanged(function() end)
+local vmz = VWTab:AddSlider('vw_z', {Text = 'Z', Default = 0, Min = -240, Max = 240, Rounding = 0, Compact = false}):OnChanged(function() end)
 local vmroll = VWTab:AddSlider('vw_roll', {Text = 'Roll', Default = 180, Min = 0, Max = 360, Rounding = 0, Compact = false}):OnChanged(function() end)
 VWTab:AddButton('Reset Values', function() 
     vmx:SetValue(0)
