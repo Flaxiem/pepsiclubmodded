@@ -133,7 +133,7 @@ local ebcount = 0
 local graphLines = {}
 local lastPos = currentCamera.ViewportSize.Y-90
 
-local HitSoundType = 3124331820
+local HitSoundType = 6534948092
 local KillSoundType = 6534948092
 ------------------------------------ GUI STUFF ------------------------------------
 local watermark = Instance.new("ScreenGui")
@@ -1323,10 +1323,10 @@ MiscSec3:AddToggle('tweaks_time', {Text = 'Infinite Buy Time', Default = false})
 MiscSec3:AddToggle('tweaks_buy', {Text = 'Buy Anywhere', Default = false})
 
 MiscSec4:AddToggle('hit_hitsound', {Text = 'Hit Sound', Default = false})
-MiscSec4:AddDropdown('hit_hitsoundtype', {Values = {'Bameware', 'Bell', 'Bubble', 'Pick', 'Pop', 'Rust', 'Skeet', 'Neverlose', 'Minecraft'}, Default = 1, Multi = false, Text = 'Hit Sound Type'})
+MiscSec4:AddDropdown('hit_hitsoundtype', {Values = {'Neverlose', 'Bell', 'Bubble', 'Pick', 'Pop', 'Rust', 'Skeet', 'Bameware', 'Minecraft'}, Default = 1, Multi = false, Text = 'Hit Sound Type'})
 Options.hit_hitsoundtype:OnChanged(function()
-    if Options.hit_hitsoundtype.Value == "Bameware" then
-        HitSoundType = 3124331820
+    if Options.hit_hitsoundtype.Value == "Neverlose" then
+        HitSoundType = 6534948092
     elseif Options.hit_hitsoundtype.Value == "Bell" then
         HitSoundType = 6534947240
     elseif Options.hit_hitsoundtype.Value == "Bubble" then
@@ -1339,8 +1339,8 @@ Options.hit_hitsoundtype:OnChanged(function()
         HitSoundType = 1255040462 
     elseif Options.hit_hitsoundtype.Value == "Skeet" then
         HitSoundType = 5633695679
-    elseif Options.hit_hitsoundtype.Value == "Neverlose" then
-        HitSoundType = 6534948092
+    elseif Options.hit_hitsoundtype.Value == "Bameware" then
+        HitSoundType = 3124331820
     elseif Options.hit_hitsoundtype.Value == "Minecraft" then
         HitSoundType = 4018616850
     end
