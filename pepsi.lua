@@ -134,7 +134,7 @@ local graphLines = {}
 local lastPos = currentCamera.ViewportSize.Y-90
 
 local HitSoundType = 3124331820
-local KillSoundType = 5902468562
+local KillSoundType = 6534948092
 ------------------------------------ GUI STUFF ------------------------------------
 local watermark = Instance.new("ScreenGui")
 local ScreenLabel = Instance.new("Frame")
@@ -1347,10 +1347,10 @@ Options.hit_hitsoundtype:OnChanged(function()
 end)
 
 MiscSec4:AddToggle('hit_killsound', {Text = 'Kill Sound', Default = false})
-MiscSec4:AddDropdown('hit_killsoundtype', {Values = {'1 Sit', 'UltraKill', 'Minecraft'}, Default = 1, Multi = false, Text = 'Kill Sound Type'})
+MiscSec4:AddDropdown('hit_killsoundtype', {Values = {'Neverlose', 'UltraKill', 'Minecraft'}, Default = 1, Multi = false, Text = 'Kill Sound Type'})
 Options.hit_hitsoundtype:OnChanged(function()
-    if Options.hit_hitsoundtype.Value == "1 Sit" then
-        KillSoundType = 5902468562
+    if Options.hit_hitsoundtype.Value == "Neverlose" then
+        KillSoundType = 6534948092
     elseif Options.hit_hitsoundtype.Value == "UltraKill" then
         KillSoundType = 937885646
     elseif Options.hit_hitsoundtype.Value == "Minecraft" then
