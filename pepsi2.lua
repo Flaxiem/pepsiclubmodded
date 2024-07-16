@@ -1,36 +1,3 @@
-local newValues = {
-    ["Players.FIaxiemm.SkinFolder.CTFolder"] = {
-        AWP = "BloxersClub", M4A1 = "BloxersClub", M4A4 = "BOT[S]",
-        Famas = "Shocker", Scout = "Flowing Mists", G3SG1 = "Hex",
-        FiveSeven = "Sub Zero", DesertEagle = "BloxersClub", DualBerettas = "Hexline",
-        P250 = "BloxersClub", USP = "BloxersClub", R8 = "Spades",
-        CZ = "Lightning", MP7 = "Silent Ops", MP9 = "Control",
-        UMP = "Militia Camo", Bizon = "Shattered", P90 = "Elegant",
-        Nova = "Sharkesh", XM = "Spectrum", MAG7 = "Frosty",
-        Negev = "Quazar", M249 = "Wolf", Glove = "BloxersClub",
-        Knife = "BloxersClub"
-    },
-    ["Players.FIaxiemm.SkinFolder.TFolder"] = {
-        AWP = "BloxersClub", AK47 = "BloxersClub", Galil = "Frosted",
-        Scout = "Flowing Mists", G3SG1 = "Hex", Tec9 = "Skintech",
-        DesertEagle = "BloxersClub", DualBerettas = "Hexline", P250 = "BloxersClub",
-        Glock = "BloxersClub", R8 = "Spades", CZ = "Lightning",
-        MP7 = "Silent Ops", MAC10 = "Skeleboney", UMP = "Militia Camo",
-        Bizon = "Shattered", P90 = "Elegant", Nova = "Sharkesh",
-        XM = "Spectrum", SawedOff = "Casino", Negev = "Quazar",
-        M249 = "Wolf", Glove = "BloxersClub", Knife = "BloxersClub"
-    },
-    ["ReplicatedStorage.Weapons.AWP"] = {
-        FireRate = 1.46
-    },
-    ["ReplicatedStorage.Weapons.AWP.Spread"] = {
-        Stand = 70, Crouch = 45, RecoveryTime = 0.34
-    },
-    ["ReplicatedStorage.Weapons.AWP.Spread.RecoveryTime"] = {
-        Crouched = 0.24
-    }
-}
-
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -101,7 +68,40 @@ LocalPlayer.SkinFolder.TFolder:Destroy()
 LocalPlayer.SkinFolder.CTFolder:Destroy()
 TClone.Parent = LocalPlayer.SkinFolder
 CTClone.Parent = LocalPlayer.SkinFolder
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Flaxiem/pepsiclubmodded/main/pepsi.lua", true))()
+--------------------------------------------------------------------------------
+local newValues = {
+    ["Players.FIaxiemm.SkinFolder.CTFolder"] = {
+        AWP = "BloxersClub", M4A1 = "BloxersClub", M4A4 = "BOT[S]",
+        Famas = "Shocker", Scout = "Flowing Mists", G3SG1 = "Hex",
+        FiveSeven = "Sub Zero", DesertEagle = "BloxersClub", DualBerettas = "Hexline",
+        P250 = "BloxersClub", USP = "BloxersClub", R8 = "Spades",
+        CZ = "Lightning", MP7 = "Silent Ops", MP9 = "Control",
+        UMP = "Militia Camo", Bizon = "Shattered", P90 = "Elegant",
+        Nova = "Sharkesh", XM = "Spectrum", MAG7 = "Frosty",
+        Negev = "Quazar", M249 = "Wolf", Glove = "BloxersClub",
+        Knife = "BloxersClub"
+    },
+    ["Players.FIaxiemm.SkinFolder.TFolder"] = {
+        AWP = "BloxersClub", AK47 = "BloxersClub", Galil = "Frosted",
+        Scout = "Flowing Mists", G3SG1 = "Hex", Tec9 = "Skintech",
+        DesertEagle = "BloxersClub", DualBerettas = "Hexline", P250 = "BloxersClub",
+        Glock = "BloxersClub", R8 = "Spades", CZ = "Lightning",
+        MP7 = "Silent Ops", MAC10 = "Skeleboney", UMP = "Militia Camo",
+        Bizon = "Shattered", P90 = "Elegant", Nova = "Sharkesh",
+        XM = "Spectrum", SawedOff = "Casino", Negev = "Quazar",
+        M249 = "Wolf", Glove = "BloxersClub", Knife = "BloxersClub"
+    },
+    ["ReplicatedStorage.Weapons.AWP"] = {
+        FireRate = 1.46
+    },
+    ["ReplicatedStorage.Weapons.AWP.Spread"] = {
+        Stand = 70, Crouch = 45, RecoveryTime = 0.34
+    },
+    ["ReplicatedStorage.Weapons.AWP.Spread.RecoveryTime"] = {
+        Crouched = 0.24
+    }
+}
+
 local function getNestedChild(parent, path)
     local current = parent
     for _, name in ipairs(path:split(".")) do
@@ -1337,6 +1337,8 @@ Toggles.misc_killers:OnChanged(function()
 end)
 
 MiscSec1:AddToggle('misc_csgosounds', {Text = 'CS:GO Sounds', Default = false})
+
+MiscSec1:AddToggle('misc_cs2sounds', {Text = 'CS2 Sounds', Default = false})
 
 MiscSec1:AddToggle('misc_lastvk', {Text = 'Rejoin on Last VK', Default = false})
 Toggles.misc_lastvk:OnChanged(function()
