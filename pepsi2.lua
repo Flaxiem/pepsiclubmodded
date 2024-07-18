@@ -1,4 +1,4 @@
-          local LocalPlayer = game:GetService("Players").LocalPlayer
+local LocalPlayer = game:GetService("Players").LocalPlayer
 local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
@@ -2348,115 +2348,187 @@ local function Misc()
     if Toggles.misc_csgosounds.Value then
         pcall(function()
             if localPlayer.Character.EquippedTool.Value == "AK47" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112730119"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18511998843"
             end
             if localPlayer.Character.EquippedTool.Value == "M4A1" then
-                localPlayer.Character.Gun.SShoot.Value = "rbxassetid://1665639883"
-                localPlayer.Character.Gun.SShoot2.Value = "rbxassetid://1665639883"
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112865134"
+                localPlayer.Character.Gun.SShoot.Value = "rbxassetid://18511610136"
+                localPlayer.Character.Gun.SShoot2.Value = "rbxassetid://18511610136"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18511685307"
             end
             if localPlayer.Character.EquippedTool.Value == "P2000" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://8737376923"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512448070"
             end
             if localPlayer.Character.EquippedTool.Value == "Glock" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112951656"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512279002"
             end
             if localPlayer.Character.EquippedTool.Value == "Tec9" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1074291066"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512126782"
             end
             if localPlayer.Character.EquippedTool.Value == "P250" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112861631"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512177502"
             end
             if localPlayer.Character.EquippedTool.Value == "FiveSeven" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112760448"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512308469"
             end
             if localPlayer.Character.EquippedTool.Value == "CZ" then
                 localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512347744"
             end
             if localPlayer.Character.EquippedTool.Value == "DesertEagle" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://255048411"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512320783"
             end
             if localPlayer.Character.EquippedTool.Value == "R8" then
                 localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512160362"
             end
             if localPlayer.Character.EquippedTool.Value == "USP" then
-                localPlayer.Character.Gun.SShoot.Value = "rbxassetid://1112952739"
-                localPlayer.Character.Gun.SShoot2.Value = "rbxassetid://1112952739"
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112953216"
+                localPlayer.Character.Gun.SShoot.Value = "rbxassetid://18512076478"
+                localPlayer.Character.Gun.SShoot2.Value = "rbxassetid://18512076478"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512078028"
             end
             if localPlayer.Character.EquippedTool.Value == "MP9" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://2400424487"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512198333"
             end
             if localPlayer.Character.EquippedTool.Value == "MP7" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://2400424487"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512206363"
             end
             if localPlayer.Character.EquippedTool.Value == "UMP" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112854510"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512121110"
             end
             if localPlayer.Character.EquippedTool.Value == "P90" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112952100"
-                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://1112952100"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512170684"
+                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://18512170684"
             end
             if localPlayer.Character.EquippedTool.Value == "Bizon" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://6730312567"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512355543"
             end
             if localPlayer.Character.EquippedTool.Value == "Famas" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112949558"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512313224"
             end
             if localPlayer.Character.EquippedTool.Value == "Galil" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://3096148900"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512283606"
             end
             if localPlayer.Character.EquippedTool.Value == "Scout" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112858108"
-                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://1112858108"
-                localPlayer.Character.Gun.Shoot3.Value = "rbxassetid://1112858108"
-                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://1112858108"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512135695"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512135695"
+                localPlayer.Character.Gun.Shoot3.Value = "rbxassetid://18512135695"
+                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://18512135695"
             end
             if localPlayer.Character.EquippedTool.Value == "M4A4" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://6732726386"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512863349"
             end
             if localPlayer.Character.EquippedTool.Value == "AUG" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112749769"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512365907"
             end
             if localPlayer.Character.EquippedTool.Value == "SG" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112953720"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512141763"
             end
             if localPlayer.Character.EquippedTool.Value == "AWP" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112948895"
-                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://1112948895"
-                localPlayer.Character.Gun.Shoot3.Value = "rbxassetid://1112948895"
-                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://1112948895"
-                localPlayer.Character.Gun.Shoot5.Value = "rbxassetid://1112948895"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512361396"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512361396"
+                localPlayer.Character.Gun.Shoot3.Value = "rbxassetid://18512361396"
+                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://18512361396"
+                localPlayer.Character.Gun.Shoot5.Value = "rbxassetid://18512361396"
             end
             if localPlayer.Character.EquippedTool.Value == "G3SG1" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112950864"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512294165"
             end
             if localPlayer.Character.EquippedTool.Value == "Nova" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112954194"
-                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://1112954194"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512185774"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512185774"
             end
             if localPlayer.Character.EquippedTool.Value == "XM" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112750475"
-                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://1112750475"
-                localPlayer.Character.Gun.Shoot3.Value = "rbxassetid://1112750475"
-                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://1112750475"
-                localPlayer.Character.Gun.Shoot5.Value = "rbxassetid://1112750475"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512113157"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512113157"
+                localPlayer.Character.Gun.Shoot3.Value = "rbxassetid://18512113157"
+                localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://18512113157"
+                localPlayer.Character.Gun.Shoot5.Value = "rbxassetid://18512113157"
             end
             if localPlayer.Character.EquippedTool.Value == "MAG7" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112954194"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512215476"
             end
             if localPlayer.Character.EquippedTool.Value == "SawwedOff" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112954194"
-                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://1112954194"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512149321"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512149321"
             end
             if localPlayer.Character.EquippedTool.Value == "M249" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112739791"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512231153"
             end
             if localPlayer.Character.EquippedTool.Value == "Negev" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112852139"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512193125"
             end
             if localPlayer.Character.EquippedTool.Value == "MP7-SD" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://2476571324"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512721424"
+            end
+            if localPlayer.Character.EquippedTool.Value == "T Knife" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
+            end
+            if localPlayer.Character.EquippedTool.Value == "CT Knife" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
+            end
+            if localPlayer.Character.EquippedTool.Value == "Bayonet" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
+            end
+            if localPlayer.Character.EquippedTool.Value == "Falchion Knife" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
+            end
+            if localPlayer.Character.EquippedTool.Value == "Gut Knife" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
+            end
+            if localPlayer.Character.EquippedTool.Value == "Butterfly Knife" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
+            end
+            if localPlayer.Character.EquippedTool.Value == "Huntsman Knife" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
+            end
+            if localPlayer.Character.EquippedTool.Value == "Karambit" then
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://18512259863"
+                localPlayer.Character.Gun.Shoot2.Value = "rbxassetid://18512262218"
+                localPlayer.Character.Gun.Hit1.Value = "rbxassetid://18512264302"
+                localPlayer.Character.Gun.Hit2.Value = "rbxassetid://18512265986"
+                localPlayer.Character.Gun.Hit3.Value = "rbxassetid://18512268597"
+                localPlayer.Character.Gun.Hit4.Value = "rbxassetid://18512270266"
+                localPlayer.Character.Gun.Stab.Value = "rbxassetid://18512256042"
             end
         end)
     end
