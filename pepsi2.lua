@@ -2413,7 +2413,7 @@ local function Misc()
                 localPlayer.Character.Gun.Shoot4.Value = "rbxassetid://1112858108"
             end
             if localPlayer.Character.EquippedTool.Value == "M4A4" then
-                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://6732726386"
+                localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112865134"
             end
             if localPlayer.Character.EquippedTool.Value == "AUG" then
                 localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112749769"
