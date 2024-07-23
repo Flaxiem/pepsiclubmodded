@@ -3,13 +3,17 @@ local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local allSkins = {
-   {'DesertEagle_BloxersClub'},
-   {'FiveSeven_Sub Zero'},
-   {'MP7_Silent Ops'},
+   {'DesertEagle_Honor Bound'},
+   {'FiveSeven_Fluid'},
+   {'MP7_Raindeer'},
    {'R8_Spades'},
-   {'CZ_Lightning'},
-   {'Tec9_Skintech'},
-   {'Strapped Glove_BloxersClub'},
+   {'CZ_Orange Web'},
+   {'Tec9_Samurai'},
+   {'Handwraps_MMA'},
+   {'Karambit_Ruby'}
+   {'MP7-SD_Stock'},
+   {'M4A1_Technician'},
+   {'M4A4_Devil'},
 }
 
 local isUnlocked
@@ -71,25 +75,24 @@ CTClone.Parent = LocalPlayer.SkinFolder
 --------------------------------------------------------------------------------
 local newValues = {
     ["Players.RAC_Flaxiem.SkinFolder.CTFolder"] = {
-        AWP = "BloxersClub", M4A1 = "BloxersClub", M4A4 = "BOT[S]",
-        Famas = "Shocker", Scout = "Flowing Mists", G3SG1 = "Hex",
-        FiveSeven = "Sub Zero", DesertEagle = "BloxersClub", DualBerettas = "Hexline",
-        P250 = "BloxersClub", USP = "BloxersClub", R8 = "Spades",
-        CZ = "Lightning", MP7 = "Silent Ops", MP9 = "Control",
-        UMP = "Militia Camo", Bizon = "Shattered", P90 = "Elegant",
-        Nova = "Sharkesh", XM = "Spectrum", MAG7 = "Frosty",
-        Negev = "Quazar", M249 = "Wolf", Glove = "BloxersClub",
-        Knife = "BloxersClub"
+        AWP = "Lunar", M4A1 = "Technician",
+        Famas = "Haunted Forest", Scout = "Posh", G3SG1 = "Hex",
+        FiveSeven = "Fluid", DesertEagle = "Honor Bound", DualBerettas = "Carbonized",
+        P250 = "Bomber", USP = "Unseen",
+        MP7 = "Raindeer", MP9 = "Stock",
+        UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
+        Nova = "Sharkesh", XM = "Red", MAG7 = "Bombshell",
+        Negev = "Stock", M249 = "P2020", Aug = "Dream Hound"
     },
     ["Players.RAC_Flaxiem.SkinFolder.TFolder"] = {
-        AWP = "BloxersClub", AK47 = "BloxersClub", Galil = "Frosted",
-        Scout = "Flowing Mists", G3SG1 = "Hex", Tec9 = "Skintech",
-        DesertEagle = "BloxersClub", DualBerettas = "Hexline", P250 = "BloxersClub",
-        Glock = "BloxersClub", R8 = "Spades", CZ = "Lightning",
-        MP7 = "Silent Ops", MAC10 = "Skeleboney", UMP = "Militia Camo",
-        Bizon = "Shattered", P90 = "Elegant", Nova = "Sharkesh",
-        XM = "Spectrum", SawedOff = "Casino", Negev = "Quazar",
-        M249 = "Wolf", Glove = "BloxersClub", Knife = "BloxersClub"
+        AWP = "Lunar", AK47 = "Variant Camo",
+        Galil = "Stock", Scout = "Posh", G3SG1 = "Hex",
+        Tec9 = "Samurai", DesertEagle = "Honor Bound", DualBerettas = "Carbonized",
+        P250 = "Bomber", Glock = "Rush",
+        MP7 = "Raindeer", MAC10 = "Turbo",
+        UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
+        Nova = "Sharkesh", XM = "Red", SawedOff = "Casino",
+        Negev = "Stock", M249 = "P2020"
     },
     ["ReplicatedStorage.Weapons.AWP"] = {
         FireRate = 1.46
@@ -100,7 +103,7 @@ local newValues = {
     ["ReplicatedStorage.Weapons.AWP.Spread.RecoveryTime"] = {
         Crouched = 0.24
     }
-}
+}   
 
 local function getNestedChild(parent, path)
     local current = parent
@@ -146,7 +149,7 @@ local function replaceValues()
     end
 end
 
-replaceValues()
+replaceValues()         
 ------------------------------------ HOL UP ------------------------------------
 repeat wait() until game:IsLoaded()
 local LoadingTime = tick();
