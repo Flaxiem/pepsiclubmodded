@@ -3,7 +3,7 @@ local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local allSkins = {
-   {'DesertEagle_Honor-Bound'},
+   {'DesertEagle_Honor-bound'},
    {'FiveSeven_Fluid'},
    {'MP7_Reindeer'},
    {'R8_Spades'},
@@ -77,7 +77,7 @@ local newValues = {
     ["Players.RAC_Flaxiem.SkinFolder.CTFolder"] = {
         AWP = "Lunar", M4A1 = "Tecnician",
         Famas = "Haunted Forest", Scout = "Posh", G3SG1 = "Hex",
-        FiveSeven = "Fluid", DesertEagle = "Honor-Bound", DualBerettas = "Carbonized",
+        FiveSeven = "Fluid", DesertEagle = "Honor-bound", DualBerettas = "Carbonized",
         P250 = "Bomber", USP = "Unseen",
         MP7 = "Reindeer", MP9 = "Stock",
         UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
@@ -87,7 +87,7 @@ local newValues = {
     ["Players.RAC_Flaxiem.SkinFolder.TFolder"] = {
         AWP = "Lunar", AK47 = "Variant Camo",
         Galil = "Stock", Scout = "Posh", G3SG1 = "Hex",
-        Tec9 = "Samurai", DesertEagle = "Honor-Bound", DualBerettas = "Carbonized",
+        Tec9 = "Samurai", DesertEagle = "Honor-bound", DualBerettas = "Carbonized",
         P250 = "Bomber", Glock = "Rush",
         MP7 = "Reindeer", MAC10 = "Turbo",
         UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
