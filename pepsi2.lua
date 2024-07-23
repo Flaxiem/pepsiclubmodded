@@ -3,16 +3,16 @@ local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local allSkins = {
-   {'DesertEagle_Honor Bound'},
+   {'DesertEagle_Honor-Bound'},
    {'FiveSeven_Fluid'},
-   {'MP7_Raindeer'},
+   {'MP7_Reindeer'},
    {'R8_Spades'},
    {'CZ_Orange Web'},
    {'Tec9_Samurai'},
    {'Handwraps_MMA'},
    {'Karambit_Ruby'},
    {'MP7-SD_Stock'},
-   {'M4A1_Technician'},
+   {'M4A1_Tecnician'},
    {'M4A4_Devil'},
 }
 
@@ -75,11 +75,11 @@ CTClone.Parent = LocalPlayer.SkinFolder
 --------------------------------------------------------------------------------
 local newValues = {
     ["Players.RAC_Flaxiem.SkinFolder.CTFolder"] = {
-        AWP = "Lunar", M4A1 = "Technician",
+        AWP = "Lunar", M4A1 = "Tecnician",
         Famas = "Haunted Forest", Scout = "Posh", G3SG1 = "Hex",
-        FiveSeven = "Fluid", DesertEagle = "Honor Bound", DualBerettas = "Carbonized",
+        FiveSeven = "Fluid", DesertEagle = "Honor-Bound", DualBerettas = "Carbonized",
         P250 = "Bomber", USP = "Unseen",
-        MP7 = "Raindeer", MP9 = "Stock",
+        MP7 = "Reindeer", MP9 = "Stock",
         UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
         Nova = "Sharkesh", XM = "Red", MAG7 = "Bombshell",
         Negev = "Stock", M249 = "P2020", AUG = "Dream Hound"
@@ -87,9 +87,9 @@ local newValues = {
     ["Players.RAC_Flaxiem.SkinFolder.TFolder"] = {
         AWP = "Lunar", AK47 = "Variant Camo",
         Galil = "Stock", Scout = "Posh", G3SG1 = "Hex",
-        Tec9 = "Samurai", DesertEagle = "Honor Bound", DualBerettas = "Carbonized",
+        Tec9 = "Samurai", DesertEagle = "Honor-Bound", DualBerettas = "Carbonized",
         P250 = "Bomber", Glock = "Rush",
-        MP7 = "Raindeer", MAC10 = "Turbo",
+        MP7 = "Reindeer", MAC10 = "Turbo",
         UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
         Nova = "Sharkesh", XM = "Red", SawedOff = "Casino",
         Negev = "Stock", M249 = "P2020"
