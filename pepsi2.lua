@@ -70,7 +70,7 @@ TClone.Parent = LocalPlayer.SkinFolder
 CTClone.Parent = LocalPlayer.SkinFolder
 --------------------------------------------------------------------------------
 local newValues = {
-    ["Players.FIaxiemm.SkinFolder.CTFolder"] = {
+    ["Players.RAC_Flaxiem.SkinFolder.CTFolder"] = {
         AWP = "BloxersClub", M4A1 = "BloxersClub", M4A4 = "BOT[S]",
         Famas = "Shocker", Scout = "Flowing Mists", G3SG1 = "Hex",
         FiveSeven = "Sub Zero", DesertEagle = "BloxersClub", DualBerettas = "Hexline",
@@ -81,7 +81,7 @@ local newValues = {
         Negev = "Quazar", M249 = "Wolf", Glove = "BloxersClub",
         Knife = "BloxersClub"
     },
-    ["Players.FIaxiemm.SkinFolder.TFolder"] = {
+    ["Players.RAC_Flaxiem.SkinFolder.TFolder"] = {
         AWP = "BloxersClub", AK47 = "BloxersClub", Galil = "Frosted",
         Scout = "Flowing Mists", G3SG1 = "Hex", Tec9 = "Skintech",
         DesertEagle = "BloxersClub", DualBerettas = "Hexline", P250 = "BloxersClub",
