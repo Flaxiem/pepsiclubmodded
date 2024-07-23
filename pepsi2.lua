@@ -10,7 +10,7 @@ local allSkins = {
    {'CZ_Orange Web'},
    {'Tec9_Samurai'},
    {'Handwraps_MMA'},
-   {'Karambit_Ruby'}
+   {'Karambit_Ruby'},
    {'MP7-SD_Stock'},
    {'M4A1_Technician'},
    {'M4A4_Devil'},
@@ -82,7 +82,7 @@ local newValues = {
         MP7 = "Raindeer", MP9 = "Stock",
         UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
         Nova = "Sharkesh", XM = "Red", MAG7 = "Bombshell",
-        Negev = "Stock", M249 = "P2020", Aug = "Dream Hound"
+        Negev = "Stock", M249 = "P2020", AUG = "Dream Hound"
     },
     ["Players.RAC_Flaxiem.SkinFolder.TFolder"] = {
         AWP = "Lunar", AK47 = "Variant Camo",
