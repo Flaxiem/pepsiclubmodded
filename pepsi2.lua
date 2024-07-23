@@ -2357,6 +2357,8 @@ local function Misc()
                 localPlayer.Character.Gun.SShoot.Value = "rbxassetid://1665639883"
                 localPlayer.Character.Gun.SShoot2.Value = "rbxassetid://1665639883"
                 localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112865134"
+		localPlayer.Character.Gun.SShoot.Volume.Value = "0.5"
+                localPlayer.Character.Gun.SShoot2.Volume.Value = "0.5"
             end
             if localPlayer.Character.EquippedTool.Value == "P2000" then
                 localPlayer.Character.Gun.Shoot.Value = "rbxassetid://8737376923"
@@ -2386,6 +2388,8 @@ local function Misc()
                 localPlayer.Character.Gun.SShoot.Value = "rbxassetid://1112952739"
                 localPlayer.Character.Gun.SShoot2.Value = "rbxassetid://1112952739"
                 localPlayer.Character.Gun.Shoot.Value = "rbxassetid://1112953216"
+		localPlayer.Character.Gun.SShoot.Volume.Value = "0.5"
+                localPlayer.Character.Gun.SShoot2..Volume.Value = "0.5"
             end
             if localPlayer.Character.EquippedTool.Value == "MP9" then
                 localPlayer.Character.Gun.Shoot.Value = "rbxassetid://2400424487"
