@@ -102,6 +102,12 @@ local newValues = {
     },
     ["ReplicatedStorage.Weapons.AWP.Spread.RecoveryTime"] = {
         Crouched = 0.24
+    },
+    ["ReplicatedStorage.Weapons.AK47.Spread"] = {
+        RecoveryTime = 0.3
+    },
+    ["ReplicatedStorage.Weapons.AK47.Spread.RecoveryTime"] = {
+        Crouched = 0.2
     }
 }   
 
@@ -149,7 +155,7 @@ local function replaceValues()
     end
 end
 
-replaceValues()         
+replaceValues()                  
 ------------------------------------ HOL UP ------------------------------------
 repeat wait() until game:IsLoaded()
 local LoadingTime = tick();
