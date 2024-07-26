@@ -136,7 +136,7 @@ local newValues = {
     ["ReplicatedStorage.Weapons.AK47.Spread.RecoveryTime"] = {
         Crouched = 0.2
     },
-    ["Players.RAC_Flaxiem.PlayerGUI"] = {
+    ["Players.RAC_Flaxiem.PlayerGui"] = {
         Headshot1 = "rbxassetid://5764885315",
         Headshot2 = "rbxassetid://5764885927",
         Headshot3 = "rbxassetid://5764885315",
@@ -146,7 +146,7 @@ local newValues = {
         HHeadshot3 = "rbxassetid://5764885315",
         HHeadshot4 = "rbxassetid://5764885927"
     },
-    ["StarterGUI"] = {
+    ["StarterGui"] = {
         Headshot1 = "rbxassetid://5764885315",
         Headshot2 = "rbxassetid://5764885927",
         Headshot3 = "rbxassetid://5764885315",
