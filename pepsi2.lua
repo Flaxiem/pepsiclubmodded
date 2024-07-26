@@ -75,30 +75,57 @@ CTClone.Parent = LocalPlayer.SkinFolder
 --------------------------------------------------------------------------------
 local newValues = {
     ["Players.RAC_Flaxiem.SkinFolder.CTFolder"] = {
-        AWP = "Lunar", M4A1 = "Tecnician",
-        Famas = "Haunted Forest", Scout = "Posh", G3SG1 = "Hex",
-        FiveSeven = "Fluid", DesertEagle = "Honor-bound", DualBerettas = "Carbonized",
-        P250 = "Bomber", USP = "Unseen",
-        MP7 = "Reindeer", MP9 = "Stock",
-        UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
-        Nova = "Sharkesh", XM = "Red", MAG7 = "Bombshell",
-        Negev = "Stock", M249 = "P2020", AUG = "Dream Hound"
+        AWP = "Lunar",
+        M4A1 = "Tecnician",
+        Famas = "Haunted Forest",
+        Scout = "Posh",
+        G3SG1 = "Hex",
+        FiveSeven = "Fluid",
+        DesertEagle = "Honor-bound",
+        DualBerettas = "Carbonized",
+        P250 = "Bomber",
+        USP = "Unseen",
+        MP7 = "Reindeer",
+        MP9 = "Stock",
+        UMP = "Magma",
+        Bizon = "Oblivion",
+        P90 = "Redcopy",
+        Nova = "Sharkesh",
+        XM = "Red",
+        MAG7 = "Bombshell",
+        Negev = "Stock",
+        M249 = "P2020",
+        AUG = "Dream Hound"
     },
     ["Players.RAC_Flaxiem.SkinFolder.TFolder"] = {
-        AWP = "Lunar", AK47 = "Variant Camo",
-        Galil = "Stock", Scout = "Posh", G3SG1 = "Hex",
-        Tec9 = "Samurai", DesertEagle = "Honor-bound", DualBerettas = "Carbonized",
-        P250 = "Bomber", Glock = "Rush",
-        MP7 = "Reindeer", MAC10 = "Turbo",
-        UMP = "Magma", Bizon = "Oblivion", P90 = "Redcopy",
-        Nova = "Sharkesh", XM = "Red", SawedOff = "Casino",
-        Negev = "Stock", M249 = "P2020"
+        AWP = "Lunar",
+        AK47 = "Variant Camo",
+        Galil = "Stock",
+        Scout = "Posh",
+        G3SG1 = "Hex",
+        Tec9 = "Samurai",
+        DesertEagle = "Honor-bound",
+        DualBerettas = "Carbonized",
+        P250 = "Bomber",
+        Glock = "Rush",
+        MP7 = "Reindeer",
+        MAC10 = "Turbo",
+        UMP = "Magma",
+        Bizon = "Oblivion",
+        P90 = "Redcopy",
+        Nova = "Sharkesh",
+        XM = "Red",
+        SawedOff = "Casino",
+        Negev = "Stock",
+        M249 = "P2020"
     },
     ["ReplicatedStorage.Weapons.AWP"] = {
         FireRate = 1.46
     },
     ["ReplicatedStorage.Weapons.AWP.Spread"] = {
-        Stand = 70, Crouch = 45, RecoveryTime = 0.34
+        Stand = 70,
+        Crouch = 45,
+        RecoveryTime = 0.34
     },
     ["ReplicatedStorage.Weapons.AWP.Spread.RecoveryTime"] = {
         Crouched = 0.24
@@ -108,8 +135,38 @@ local newValues = {
     },
     ["ReplicatedStorage.Weapons.AK47.Spread.RecoveryTime"] = {
         Crouched = 0.2
+    },
+    ["Players.RAC_Flaxiem.PlayerGUI"] = {
+        Headshot1 = "rbxassetid://5764885315",
+        Headshot2 = "rbxassetid://5764885927",
+        Headshot3 = "rbxassetid://5764885315",
+        Headshot4 = "rbxassetid://5764885927",
+        HHeadshot1 = "rbxassetid://5764885315",
+        HHeadshot2 = "rbxassetid://5764885927",
+        HHeadshot3 = "rbxassetid://5764885315",
+        HHeadshot4 = "rbxassetid://5764885927"
+    },
+    ["StarterGUI"] = {
+        Headshot1 = "rbxassetid://5764885315",
+        Headshot2 = "rbxassetid://5764885927",
+        Headshot3 = "rbxassetid://5764885315",
+        Headshot4 = "rbxassetid://5764885927",
+        HHeadshot1 = "rbxassetid://5764885315",
+        HHeadshot2 = "rbxassetid://5764885927",
+        HHeadshot3 = "rbxassetid://5764885315",
+        HHeadshot4 = "rbxassetid://5764885927"
+    },
+    ["ReplicatedStorage.Sounds"] = {
+        Headshot1 = "rbxassetid://5764885315",
+        Headshot2 = "rbxassetid://5764885927",
+        Headshot3 = "rbxassetid://5764885315",
+        Headshot4 = "rbxassetid://5764885927",
+        Helmet1 = "rbxassetid://5764885315",
+        Helmet2 = "rbxassetid://5764885927",
+        Helmet3 = "rbxassetid://5764885315",
+        Helmet4 = "rbxassetid://5764885927"
     }
-}   
+}
 
 local function getNestedChild(parent, path)
     local current = parent
@@ -125,7 +182,7 @@ end
 local function replaceValues()
     for path, values in pairs(newValues) do
         local folder = path == "" and game or getNestedChild(game, path)
-        
+
         if folder then
             for name, value in pairs(values) do
                 local valueObject = folder:FindFirstChild(name)
