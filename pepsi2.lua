@@ -1,19 +1,221 @@
+local targetName = "bullet"
+
+local function hideImageLabels(parent)
+    for _, child in ipairs(parent:GetChildren()) do
+        if child:IsA("ImageLabel") and child.Name == targetName then
+            child.Visible = false
+        elseif child:IsA("GuiObject") then
+            hideImageLabels(child)
+        end
+    end
+end
+
+local player = game:GetService("Players").RAC_Flaxiem
+local gui = player:FindFirstChild("PlayerGui")
+if gui then
+    local ammoGUI = gui:FindFirstChild("GUI"):FindFirstChild("AmmoGUI")
+    if ammoGUI then
+        hideImageLabels(ammoGUI)
+    else
+        warn("Path 'AmmoGUI' not found.")
+    end
+else
+    warn("PlayerGui not found.")
+end
+--
+local function updateProperties(object, properties)
+    for property, value in pairs(properties) do
+        object[property] = value
+    end
+end
+
+local plusPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Vitals.Plus"
+local plusLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Vitals"):FindFirstChild("Plus")
+
+if plusLabel and plusLabel:IsA("TextLabel") then
+    updateProperties(plusLabel, {
+        TextStrokeColor3 = Color3.fromRGB(0, 0, 0),
+        TextStrokeTransparency = 1
+    })
+else
+    warn("TextLabel 'Plus' not found at path: " .. plusPath)
+end
+
+local healthPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Vitals.Health"
+local healthLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Vitals"):FindFirstChild("Health")
+
+if healthLabel and healthLabel:IsA("TextLabel") then
+    updateProperties(healthLabel, {
+        Position = UDim2.new(0.06, 0, 0.14, 0),
+        Font = Enum.Font.Michroma
+        --TextStrokeColor3 = Color3.fromRGB(0, 0, 0), -- Black stroke color
+        --TextStrokeTransparency = 1 -- Fully visible stroke
+    })
+else
+    warn("TextLabel 'Plus' not found at path: " .. healthPath)
+end
+
+local APlusPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Vitals.APlus"
+local APlusLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Vitals"):FindFirstChild("APlus")
+
+if APlusLabel and APlusLabel:IsA("ImageLabel") then
+    updateProperties(APlusLabel, {
+        Position = UDim2.new(0.22, 0, 0.27, 0)
+    })
+else
+    warn("ImageLabel 'APlus' not found at path: " .. APlusPath)
+end
+
+local ArmorPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Vitals.Armor"
+local ArmorLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Vitals"):FindFirstChild("Armor")
+
+if ArmorLabel and ArmorLabel:IsA("TextLabel") then
+    updateProperties(ArmorLabel, {
+        Position = UDim2.new(0.27, 0, 0.14, 0),
+        Font = Enum.Font.Michroma
+    })
+else
+    warn("TextLabel 'Armor' not found at path: " .. ArmorPath)
+end
+
+local NPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Radar.Radar.N"
+local NLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Radar"):FindFirstChild("Radar"):FindFirstChild("N")
+
+if NLabel and NLabel:IsA("TextLabel") then
+    updateProperties(NLabel, {
+        Visible = false
+    })
+else
+    warn("TextLabel 'N' not found at path: " .. NPath)
+end
+
+local bkPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Vitals.bk"
+local bkLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Vitals"):FindFirstChild("bk")
+
+if bkLabel and bkLabel:IsA("ImageLabel") then
+    updateProperties(bkLabel, {
+        Visible = false
+    })
+else
+    warn("ImageLabel 'bk' not found at path: " .. bkPath)
+end
+
+local ABPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Vitals.ArmorB"
+local ABLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Vitals"):FindFirstChild("ArmorB")
+
+if ABLabel and ABLabel:IsA("TextLabel") then
+    updateProperties(ABLabel, {
+        Visible = false
+    })
+else
+    warn("TextLabel 'ArmorB' not found at path: " .. ABPath)
+end
+
+local HBPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Vitals.HealthB"
+local HBLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Vitals"):FindFirstChild("HealthB")
+
+if HBLabel and HBLabel:IsA("TextLabel") then
+    updateProperties(HBLabel, {
+        Visible = false
+    })
+else
+    warn("TextLabel 'HealthB' not found at path: " .. HBPath)
+end
+
+local BuyPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Cash.BuyZone"
+local BuyLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Cash"):FindFirstChild("BuyZone")
+
+if BuyLabel and BuyLabel:IsA("ImageLabel") then
+    updateProperties(BuyLabel, {
+        Position = UDim2.new(0.34, 0, 0.5, 0)
+    })
+else
+    warn("ImageLabel 'BuyZone' not found at path: " .. BuyPath)
+end
+
+local CashPath = "Players.RAC_Flaxiem.PlayerGui.GUI.Cash"
+local CashLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("Cash")
+
+if CashLabel and CashLabel:IsA("TextLabel") then
+    updateProperties(CashLabel, {
+        Position = UDim2.new(0.07, 0, 0.957, 0),
+        BackgroundTransparency = 1,
+        TextTransparency = 0,
+        TextStrokeColor3 = Color3.fromRGB(150, 150, 150),
+        TextStrokeTransparency = 0.5,
+        Font = Enum.Font.Ubuntu
+    })
+else
+    warn("TextLabel 'Cash' not found at path: " .. CashPath)
+end
+
+local abkPath = "Players.RAC_Flaxiem.PlayerGui.GUI.AmmoGUI.bk"
+local abkLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("AmmoGUI"):FindFirstChild("bk")
+
+if abkLabel and abkLabel:IsA("ImageLabel") then
+    updateProperties(abkLabel, {
+        Visible = false
+    })
+else
+    warn("ImageLabel 'bk' not found at path: " .. abkPath)
+end
+
+local DKPath = "Players.RAC_Flaxiem.PlayerGui.GUI.AmmoGUI.DefuseKit"
+local DKLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("AmmoGUI"):FindFirstChild("DefuseKit")
+
+if DKLabel and DKLabel:IsA("ImageLabel") then
+    updateProperties(DKLabel, {
+        Size = UDim2.new(0, 110, 0, 50),
+        Position = UDim2.new(0.47, 0, 0.1, 0),
+    })
+else
+    warn("ImageLabel 'DefuseKit' not found at path: " .. DKPath)
+end
+
+local ClipPath = "Players.RAC_Flaxiem.PlayerGui.GUI.AmmoGUI.AmmoClip"
+local ClipLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("AmmoGUI"):FindFirstChild("AmmoClip")
+
+if ClipLabel and ClipLabel:IsA("TextLabel") then
+    updateProperties(ClipLabel, {
+        Position = UDim2.new(0.56, 0, 0.05, 0),
+        TextTransparency = 0,
+        Font = Enum.Font.Michroma
+    })
+else
+    warn("TextLabel 'AmmoClip' not found at path: " .. ClipPath)
+end
+
+local ReservePath = "Players.RAC_Flaxiem.PlayerGui.GUI.AmmoGUI.AmmoReserve"
+local ReserveLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("AmmoGUI"):FindFirstChild("AmmoReserve")
+
+if ReserveLabel and ReserveLabel:IsA("TextLabel") then
+    updateProperties(ReserveLabel, {
+        Position = UDim2.new(0.9, 0, 0.17, 0),
+        TextTransparency = 0,
+    })
+else
+    warn("TextLabel 'AmmoReserve' not found at path: " .. ReservePath)
+end
+
+local SlashPath = "Players.RAC_Flaxiem.PlayerGui.GUI.AmmoGUI.Slash"
+local SlashLabel = game:GetService("Players").RAC_Flaxiem.PlayerGui:FindFirstChild("GUI"):FindFirstChild("AmmoGUI"):FindFirstChild("Slash")
+
+if SlashLabel and SlashLabel:IsA("TextLabel") then
+    updateProperties(SlashLabel, {
+        Position = UDim2.new(0.87, 0, 0.23, 0),
+        TextTransparency = 0,
+    })
+else
+    warn("TextLabel 'AmmoReserve' not found at path: " .. SlashPath)
+end
+--
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local allSkins = {
-   {'DesertEagle_Honor-bound'},
-   {'FiveSeven_Fluid'},
-   {'MP7_Reindeer'},
-   {'R8_Spades'},
-   {'CZ_Orange Web'},
-   {'Tec9_Samurai'},
-   {'Handwraps_MMA'},
-   {'Karambit_Ruby'},
-   {'MP7-SD_Stock'},
-   {'M4A1_Tecnician'},
-   {'M4A4_Devil'},
+   {'Strapped Glove_Grim'},
+   {'Karambit_Hallows'},
 }
 
 local isUnlocked
@@ -72,52 +274,52 @@ LocalPlayer.SkinFolder.TFolder:Destroy()
 LocalPlayer.SkinFolder.CTFolder:Destroy()
 TClone.Parent = LocalPlayer.SkinFolder
 CTClone.Parent = LocalPlayer.SkinFolder
---------------------------------------------------------------------------------
+--
 local newValues = {
     ["Players.RAC_Flaxiem.SkinFolder.CTFolder"] = {
-        AWP = "Lunar",
-        M4A1 = "Tecnician",
-        Famas = "Haunted Forest",
-        Scout = "Posh",
+        AWP = "Regina",
+        M4A1 = "Impulse",
+        Famas = "KugaX",
+        Scout = "Flowing Mists",
         G3SG1 = "Hex",
-        FiveSeven = "Fluid",
-        DesertEagle = "Honor-bound",
-        DualBerettas = "Carbonized",
+        FiveSeven = "Sub Zero",
+        DesertEagle = "DropX",
+        DualBerettas = "Hexline",
         P250 = "Bomber",
         USP = "Unseen",
-        MP7 = "Reindeer",
+        MP7 = "Calaxian",
         MP9 = "Stock",
-        UMP = "Magma",
+        UMP = "Stock",
         Bizon = "Oblivion",
-        P90 = "Redcopy",
+        P90 = "Elegant",
         Nova = "Sharkesh",
-        XM = "Red",
-        MAG7 = "Bombshell",
-        Negev = "Stock",
-        M249 = "P2020",
+        XM = "Campfire",
+        MAG7 = "Outbreak",
+        Negev = "Quazar",
+        M249 = "Wolf",
         AUG = "Dream Hound"
     },
     ["Players.RAC_Flaxiem.SkinFolder.TFolder"] = {
-        AWP = "Lunar",
-        AK47 = "Variant Camo",
+        AWP = "Regina",
+        AK47 = "Galaxy Corpse",
         Galil = "Stock",
-        Scout = "Posh",
+        Scout = "Flowing Mists",
         G3SG1 = "Hex",
-        Tec9 = "Samurai",
-        DesertEagle = "Honor-bound",
-        DualBerettas = "Carbonized",
+        Tec9 = "Stock",
+        DesertEagle = "DropX",
+        DualBerettas = "Hexline",
         P250 = "Bomber",
         Glock = "Rush",
-        MP7 = "Reindeer",
-        MAC10 = "Turbo",
-        UMP = "Magma",
+        MP7 = "Calaxian",
+        MAC10 = "Skeleboney",
+        UMP = "Stock",
         Bizon = "Oblivion",
-        P90 = "Redcopy",
+        P90 = "Elegant",
         Nova = "Sharkesh",
-        XM = "Red",
+        XM = "Campfire",
         SawedOff = "Casino",
-        Negev = "Stock",
-        M249 = "P2020"
+        Negev = "Quazar",
+        M249 = "Wolf"
     },
     ["ReplicatedStorage.Weapons.AWP"] = {
         FireRate = 1.46
@@ -212,7 +414,7 @@ local function replaceValues()
     end
 end
 
-replaceValues()                  
+replaceValues()                
 ------------------------------------ HOL UP ------------------------------------
 repeat wait() until game:IsLoaded()
 local LoadingTime = tick();
