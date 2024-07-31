@@ -2159,7 +2159,7 @@ localPlayer.Status.Kills.Changed:Connect(function(val)
 		local killsound = Instance.new("Sound")
 		killsound.Parent = game:GetService("SoundService")
 		killsound.SoundId = 'rbxassetid://'..KillSoundType
-		killsound.Volume = 3
+		killsound.Volume = 2
 		killsound:Play()
 	end
 	
